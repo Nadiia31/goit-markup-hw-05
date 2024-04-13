@@ -485,15 +485,30 @@
             </li>
           </ul>
         </div>
-      </div>
-    </footer>
-    <div class="backdrop is-open">
-      <div class="modal">
-        <button type="button" class="modal-close-button">
-          <svg class="modal-close-svg" width="8" height="8">
-            <use href="./images/icons.svg#icon-Vector"></use>
-          </svg>
-        </button>
+        <div class="footer-sbs-wrap">
+          <p class="footer-sbs">Subscribe</p>
+          <form class="footer-form">
+            <label for=""
+              ><input
+                class="footer-input"
+                type="email"
+                name="footer-email"
+                placeholder="E-mail"
+            /></label>
+            <button type="submit" class="footer-btn">Subscribe <svg class="footer-sbs-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-Frame"></use>
+            </svg></button>
+          </form>
+        </div>
+      </footer>
+      <div class="backdrop">
+        <div class="modal">
+          <button type="button" class="modal-close-button">
+            <svg class="modal-close-svg" width="8" height="8">
+              <use href="./images/icons.svg#icon-Vector"></use>
+            </svg>
+          </button>
+        </div>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="modal-field">
@@ -546,8 +561,23 @@
               id="user-comment"
               placeholder="Text input"
             ></textarea>
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              class="modal-check visually-hidden"
+              value="true"
+            />
+            <label for="policy" class="check-text">
+              <span>
+                <svg class="check-icon" width="10" height="7">
+                  <use href="./images/icons.svg#icon-Vector-1"></use>
+                </svg> </span
+              >I accept the terms and conditions of the
+              <a class="modal-policy" href="">Privacy Policy</a></label
+            >
           </div>
-          <button type="submit">Send</button>
+          <button class="modal-sbm" type="submit">Send</button>
         </form>
       </div>
     </div>

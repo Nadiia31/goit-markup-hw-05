@@ -740,6 +740,9 @@ img {
   position: relative;
 }
 .modal-field {
+  margin-bottom: 8px;
+}
+.four {
   margin-bottom: 16px;
 }
 .modal-text {
